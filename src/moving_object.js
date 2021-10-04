@@ -1,4 +1,5 @@
 function MovingObject(options){
+    // debugger
     this.pos = options.pos;
     this.vel = options.vel;
     this.radius = options.radius;
@@ -17,8 +18,9 @@ MovingObject.prototype.draw = function(ctx){
 
 };
 
-module.exports = MovingObject;
 
 MovingObject.prototype.move = function(){
     this.pos += this.vel;
-}
+};
+
+module.exports = MovingObject;
